@@ -17,6 +17,7 @@ package org.dimigo.basic;
  */
 public class PrimitveDataType {
 //
+	//
 	/**
 	 * @param args
 	 */
