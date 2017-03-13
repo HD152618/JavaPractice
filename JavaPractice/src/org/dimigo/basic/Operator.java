@@ -32,4 +32,4 @@ public class Operator {
 		System.out.printf("연간 인건비 : %,d원",money*12*number*gae);
 		
 	}
-}
+}	
