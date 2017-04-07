@@ -54,19 +54,15 @@ public class Snack {
 		public void setNumber(int newNumber){
 			number=newNumber;
 		}
-		public static int calcPrice(Snack[] snacks){
-			int sum=0;
-			sum=snacks[0].getPrice()*snacks[0].getNumber()+snacks[1].getPrice()*snacks[1].getNumber()+snacks[2].getPrice()*snacks[2].getNumber();
-			return sum;
+		public int calcPrice(){
+			return price*number;
 			
 		}
-		public static void toString(Snack[] snacks){
-			for(int i = 0;i<3;i++){
-				System.out.println("이름 : "+snacks[i].getName());
-				System.out.println("제조사 : "+snacks[i].getCompany());
-				System.out.printf("가격 : %,d원\n",snacks[i].getPrice());
-				System.out.println("개수 : "+snacks[i].getNumber()+"개");
-				System.out.println();
+		public String toString(){
+			return "이름 : "+name+"\n"+
+			    "제조사 : "+company+"\n"+
+		            "가격 : "+String.format("%,d",price)+"원\n"+
+		            "개수 : "+String.format("%,d",number)+"개\n";
+
 			}
 		}
-}
